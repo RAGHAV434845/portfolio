@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOWKANDHA RAGHAV G | Portfolio</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --background: #ecf0f1;
+      --text: #2c3e50;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .name h1 {
+      font-size: 2rem;
+    }
+
+    .photo {
+       width: 150px;       
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        object-fit: cover;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      text-align: center;
+      background: var(--accent);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #2471a3;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: var(--accent);
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #2471a3;
+    }
+
+    @media (max-width: 768px) {
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-top: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <h1>SOWKANDHA RAGHAV G</h1>
+      <p>Third Year B.Tech Information Technology</p>
+    </div>
+    <img src="C:\Users\Raghav\Downloads\photo.png" alt="Your Photo" class="photo" />
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a 3rd-year IT student at SSN College of Engineering with a passion for coding and problem-solving. I love building, learning and growing in the world of technology. 
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: Python, C++</li>
+      <li>Web: HTML, CSS</li>
+      <li>Technical Skills: Database Management, Data Structures, Design Patterns</li>
+      <li>Soft Skills: Adaptability, Time Management , Teamwork , Motivation </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Online Word Search Game:</strong> It is a dynamic and interactive Word Search game that generates word grids based on selected topics and difficulty levels, using an efficient graph-based algorithm to support word placement and detection in all 8 directions. The platform features a responsive UI built with HTML, CSS, JavaScript, and Flask, along with a login/signup system that tracks user progress and scores. It also includes a kid-friendly learning mode that helps players discover and understand new words through engaging gameplay.</li>
+      <br>
+      <img src="C:\Users\Raghav\Downloads\word_search_game.jpg" alt="Word Search Game Screenshot" style="width: 100%; max-width: 200px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <br><br>
+      <li><strong>Online Grocery:</strong> It is a web-based vegetable shopping platform using Streamlit and Python, featuring separate dashboards for customers and vendors to enable smooth browsing, billing, inventory management, and order tracking. The system uses Hash Tables and Queues for efficient search and order management, integrates Google Maps API to display delivery locations with optimized routing, and stores data in JSON for lightweight scalability.</li>
+      <br>
+      <img src="C:\Users\Raghav\Downloads\online_grocery.jpg" alt="Online Grocery Platform Screenshot" style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Mobile: 9344246599</p>
+    <p>Email: <a href="mailto:sowkandharaghav2310623@ssn.edu.in">sowkandharaghav2310623@ssn.edu.in</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sowkandha-raghav-g-609726305/" target="_blank">www.linkedin.com/in/sowkandha-raghav-g-609726305</a></p>
+    <a href="C:\Users\Raghav\OneDrive\ドキュメント\SOWKANDHA RAGHAV G resume.pdf" download class="download-btn">📄 Resume</a>
+  </section>
+</body>
+</html>
